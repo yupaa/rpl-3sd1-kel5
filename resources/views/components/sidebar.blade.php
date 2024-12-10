@@ -61,15 +61,15 @@
                             d="m1 1 4 4 4-4" />
                     </svg>
                 </button>
-                <ul id="dropdown-pelaporan" class="{{ request()->is('rutin') ? '' : 'hidden' }} py-2 space-y-2">
+                <ul id="dropdown-pelaporan" class="{{ request()->is('laporan-rutin','laporan-umum','laporan-harian') ? '' : 'hidden' }} py-2 space-y-2">
                     <li>
-                        <x-sidebarcomp href="/rutin" :active="request()->is('rutin')">Operasi Rutin</x-sidebarcomp>
+                        <x-sidebarcomp href="/laporan-rutin" :active="request()->is('laporan-rutin')">Operasi Rutin</x-sidebarcomp>
                     </li>
                     <li>
-                        <x-sidebarcomp href="#" :active="request()->is('')">Operasi Umum</x-sidebarcomp>
+                        <x-sidebarcomp href="laporan-umum" :active="request()->is('laporan-umum')">Operasi Umum</x-sidebarcomp>
                     </li>
                     <li>
-                        <x-sidebarcomp href="#" :active="request()->is('')">Penindakan Harian</x-sidebarcomp>
+                        <x-sidebarcomp href="laporan-harian" :active="request()->is('laporan-harian')">Penindakan Harian</x-sidebarcomp>
                     </li>
                 </ul>
             </li>
@@ -87,7 +87,7 @@
                 </x-sidebarlink>
             </li>
             <li>
-                <x-sidebarlink href="#" :active="request()->is('')"                  
+                <x-sidebarlink href="/riwayat" :active="request()->is('')"                  
                     icon='
                     <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                         <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M9 8h10M9 12h10M9 16h10M4.99 8H5m-.02 4h.01m0 4H5"/>

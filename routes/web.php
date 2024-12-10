@@ -15,8 +15,16 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 });
 
-Route::get('/rutin', function () {
-    return view('rutin');
+Route::get('/laporan-rutin', function () {
+    return view('laporanrutin');
+});
+
+Route::get('/laporan-umum', function () {
+    return view('laporanumum');
+});
+
+Route::get('/laporan-harian', function () {
+    return view('laporanharian');
 });
 
 Route::get('/catat-rutin', function () {
@@ -47,4 +55,8 @@ Route::get('/catat', [CatatController::class, 'showForm']);
 
 Route::get('/kritik-saran', function () {
     return view('kritiksaran');
+});
+
+Route::get('/riwayat', function () {
+    return view('riwayat');
 });
