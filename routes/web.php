@@ -2,6 +2,11 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\CatatController;
+
+
+
+
 Route::get('/', function () {
     return view('dashboard');
 });
@@ -34,6 +39,8 @@ Route::get('/catat-harian', function () {
     return view('catatharian');
 });
 
-Route::get('/catat', function () {
+/*Route::get('/catat', function () {
     return view('catat');
-});
+});*/
+
+Route::get('/catat', [CatatController::class, 'showForm']);
