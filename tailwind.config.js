@@ -13,6 +13,7 @@ module.exports = {
         extend: {
             fontFamily:  {
               'body': [
+                'Montserrat',
                 'Inter', 
                 'ui-sans-serif', 
                 'system-ui', 
@@ -27,7 +28,8 @@ module.exports = {
                 'Apple Color Emoji', 
                 'Segoe UI Emoji', 
                 'Segoe UI Symbol', 
-                'Noto Color Emoji'
+                'Noto Color Emoji',
+
               ],
                   'sans': [
                 'Inter', 

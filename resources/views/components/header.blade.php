@@ -16,7 +16,7 @@
                 <a href="" class="flex ms-2 md:me-24">
                     <img src="img/logospd.png" class="h-8 me-3" alt="Logo SPD" />
                     <span
-                        class="self-center text-xl font-semibold sm:text-2xl whitespace-nowrap dark:text-white">SIMPPLE
+                        class="self-center text-xl font-semibold sm:text-2xl whitespace-nowrap dark:text-white text-red-900">SIMPPLE
                         SPD</span>
                 </a>
             </div>

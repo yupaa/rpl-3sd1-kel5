@@ -44,3 +44,7 @@ Route::get('/catat-harian', function () {
 });*/
 
 Route::get('/catat', [CatatController::class, 'showForm']);
+
+Route::get('/kritik-saran', function () {
+    return view('kritiksaran');
+});
